@@ -1,0 +1,5 @@
+Home budget - budżet domowy - aktywacja konta
+
+Dziękujemy za rejestrację. Kliknij aby aktywować swoje konto.
+
+{{ url }}

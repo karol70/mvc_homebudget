@@ -1,0 +1,752 @@
+[12-Oct-2021 11:17:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:17:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:17:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:17:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:17:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:17:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:17:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('register.php')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('style.css')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:22 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:18:22 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:23:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/img/oszczed...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/img/oszczed...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/img/oszczed...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:25:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:08 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:08 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:08 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:08 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:09 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:09 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:09 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:27:09 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:28:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:17 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:17 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:17 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:29:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:30:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:31:03 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:31:03 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:31:03 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:31:03 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:32:59 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:32:59 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:32:59 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:50 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:51 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:51 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:33:51 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:20 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:35:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:47 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:36:48 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:43:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('register.php')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:43:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:43:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:43:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:45 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:45 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:45 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:46 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/register...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:46 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/bootstra...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:46 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/script.j...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:46 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/css/font...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:51 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/register...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:52 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/css/font...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:52 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/script.j...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:52 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/bootstra...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:44:52 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/css/font...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:45:37 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('bootstrap/boots...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:45:37 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('script.js')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:45:37 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('css/fontello.cs...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:45:38 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/register')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line41
+[12-Oct-2021 11:45:38 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/script.j...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:45:38 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/bootstra...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45
+[12-Oct-2021 11:45:38 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\mvc_homebudget\public\index.php(70): Core\Router->dispatch('signup/css/font...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\mvc_homebudget\Core\Router.php' on line45

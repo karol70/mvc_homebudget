@@ -1,0 +1,239 @@
+[27-Sep-2021 11:59:01 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(60): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 11:59:05 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(60): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 11:59:05 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(60): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:12:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(60): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:12:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Core\Viev" not found in C:\xampp\htdocs\myFramework\Core\Error.php:53
+Stack trace:
+#0 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#1 {main}
+  thrown in C:\xampp\htdocs\myFramework\Core\Error.php on line 53
+[27-Sep-2021 12:12:16 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(60): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:12:16 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:12:56 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(60): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:12:56 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:09 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:09 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:10 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:10 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:11 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:11 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:11 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:11 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:12 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:12 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:35:13 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(71): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:35:13 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:36:49 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(70): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:36:49 Europe/Berlin] PHP Fatal error:  Uncaught Twig\Error\LoaderError: Unable to find template "404.html" (looked into: ../App/Views). in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php:227
+Stack trace:
+#0 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php(131): Twig\Loader\FilesystemLoader->findTemplate('404.html')
+#1 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(261): Twig\Loader\FilesystemLoader->getCacheKey('404.html')
+#2 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(309): Twig\Environment->getTemplateClass('404.html')
+#3 C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Environment.php(277): Twig\Environment->load('404.html')
+#4 C:\xampp\htdocs\myFramework\Core\View.php(34): Twig\Environment->render('404.html', Array)
+#5 C:\xampp\htdocs\myFramework\Core\Error.php(53): Core\View::renderTemplate('404.html')
+#6 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#7 {main}
+  thrown in C:\xampp\htdocs\myFramework\vendor\twig\twig\src\Loader\FilesystemLoader.php on line 227
+[27-Sep-2021 12:38:08 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(70): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
+[27-Sep-2021 12:39:15 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\myFramework\public\index.php(70): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\myFramework\Core\Router.php' on line45
