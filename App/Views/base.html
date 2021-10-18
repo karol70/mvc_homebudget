@@ -21,8 +21,92 @@
 		
 </head>
 <body>
+<header>
+		<nav class="navbar navbar-dark bg-success navbar-expand-lg">
+			
+			<a class="navbar-brand" href="#"><img src="/img/graph-up.svg" width="30" height="30" class="d-inline-block mx-2 align-bottom text-light" alt=""> Oszczedzaj.pl</a>
+			<i class="bi bi-graph-up" aria-hidden="true"></i>
+			
+			{% if current_user %}
+			<button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			
+			<div class="collapse navbar-collapse" id="mainmenu">
+			
+				<ul class="navbar-nav mr-auto">
+				
+					<li class="nav-item ">
+						<a class="nav-link active" href="/Menu/menu"> Strona główna </a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/Menu/income"> Dodaj przychód </a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="/Menu/expense"> Dodaj wydatek </a>
+					</li>
+					
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Przeglądaj bilans
+					  </a>
+					  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="showBalance.php?biezacymiesiac=true" >Bieżący miesiąc</a></li>
+						<li><a class="dropdown-item" href="showBalance.php?poprzednimiesiac=true" >Poprzedni miesiąc</a></li>
+						<li><a class="dropdown-item" href="showBalance.php?biezacyrok">Bieżący rok</a></li>					
+						<li><button type="button" class="dropdown-item btn" data-bs-toggle="modal" data-bs-target="#Modal">Niestandardowy</button></li>
+					  </ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"> Ustawienia </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/logout"> Wyloguj się </a>
+					</li>
+				</ul>
+			</div>
+			
+		</nav>
+		
+			<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Wprowadź okres bilansu</h5>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<form method="post" action="showBalance.php">
+								<div class="modal-body">
+									<div class="form-inline mx-auto">
+										<label> Data od: <input class="form-control" type="date" name ="dataod"></label>
+										<label> Data do: <input class="form-control" type="date" name ="datado"></label>
+									</div>
+								</div>
+							<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+									<input type="submit" class="btn btn-success" value="Pokaż bilans"/>
+							</div>
+						</form>
+						
+			</div>
+		</div>
+	</div>
+	{% endif %}
 	
-	{% block body %}
+	
+</header>
+	    {% for message in flash_messages %}
+            <div class="alert alert-{{ message.type }}">
+                {{ message.body }}
+            </div>
+        {% endfor %}
+		
+	{% block body %}	
     {% endblock %}
 	
 	<footer>

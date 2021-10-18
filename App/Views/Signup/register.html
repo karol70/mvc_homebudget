@@ -2,15 +2,14 @@
 
 {% block title %}Home{% endblock %}
 {% block footer %}
-    <script src="/js/hideShowPassword.min.js"></script>
+    <script src="/js/hideShowPass.js"></script>
+	
     <script src="/js/app.js"></script>
 
     <script>
         $(document).ready(function() {
 
-            /**
-             * Validate the form
-             */
+           
             $('#formSignup').validate({
                 rules: {
                     name: 'required',
@@ -31,10 +30,7 @@
                     }
                 }
             });
-            $('#inputPassword').hideShowPassword({
-                show: false,
-                innerToggle: 'focus'
-            });
+           
         });
     </script>
 
@@ -64,9 +60,14 @@
 				
 				
 				<div class="form-group col-sm-8 col-lg-6 mb-3 w-md-50 mx-auto" >
-					<label for="inputPassword" class="form-label"> Hasło: </label>
-					<input type ="password" class="form-control" id="inputPassword" name="password" required>
-				</div>
+					<label for="inputPassword" class="form-label"> Hasło: </label>	
+						<input type ="password" class="form-control" id="inputPassword" name="password" required>
+						
+							<input type="checkbox" class="form-check-input" role="switch" id="btncheck" onclick="HideShowPass()">
+							<label class="form-check-label" for="btncheck">Pokaż hasło</label>
+						
+					</div>
+				
 				
 				
 				<div class="text-center">
@@ -74,8 +75,9 @@
 					<a href="/home/index"><div class="btn btn-secondary mx-1"> Powrót do logowania</div></a>
 				</div>
 				
+				
 				{% if user.errors is not empty %}
-				<p>Errors:</p>
+				<p>Błędy:</p>
 				<ul>
 					{% for error in user.errors %}
 					<li>{{ error }}</li>

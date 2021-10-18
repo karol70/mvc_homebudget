@@ -57,30 +57,30 @@ class User extends \Core\Model
     {
         
         if ($this->name == '') {
-            $this->errors[] = 'Name is required';
+            $this->errors[] = 'Nazwa jest wymagana';
         }
 
         
         if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
-            $this->errors[] = 'Invalid email';
+            $this->errors[] = 'Nieprawidłowy email';
         }
         if (static::emailExists($this->email, $this->id ?? null)) {
-            $this->errors[] = 'email already taken';
+            $this->errors[] = 'Email jest już zajęty';
         }
 
         
         if (isset($this->password)) {
 
             if (strlen($this->password) < 6) {
-                $this->errors[] = 'Please enter at least 6 characters for the password';
+                $this->errors[] = 'Hasło powinno się składać z co najmniej 6 znaków';
             }
 
             if (preg_match('/.*[a-z]+.*/i', $this->password) == 0) {
-                $this->errors[] = 'Password needs at least one letter';
+                $this->errors[] = 'Hasło powinno zawierać chociaż jedną literę';
             }
 
             if (preg_match('/.*\d+.*/i', $this->password) == 0) {
-                $this->errors[] = 'Password needs at least one number';
+                $this->errors[] = 'Hasło powinno zawierać chociaż jedną cyfrę';
             }
 
         }
@@ -122,7 +122,7 @@ class User extends \Core\Model
         $user = static::findByEmail($email);
 
         if ($user && $user->is_active) {
-            if (password_verify($password, $user->password_hash)) {
+            if (password_verify($password, $user->password)) {
                 return $user;
             }
         }
@@ -176,7 +176,7 @@ class User extends \Core\Model
         $text = View::getTemplate('Signup/activation_email.txt', ['url' => $url]);
         $html = View::getTemplate('Signup/activation_email.html', ['url' => $url]);
 		
-		Mail::send($this->email, 'Account activation', $html, $text);   
+		Mail::send($this->email, 'Aktywacja konta', $html, $text);   
     }
 
     
