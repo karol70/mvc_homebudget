@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+{% block footer %}
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+{% endblock %}
+{% block body %}
+	
+	<article>
+		
+		<div class="container  col-sm-8 col-lg-6 mb-3 mx-auto text-light font-18">
+		
+				
+			<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3  col-4 col-lg-3"> Przychody </h5>
+		<div class="mb-3 mx-auto">		
+		
+		</div>	
+			
+			<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3  w-25"> Wydatki </h5>
+			
+			
+		<div class="mb-3 mx-auto">
+			
+		
+		</div>
+			
+			<div class=" mb-3 mx-auto bg-success" style="--bs-bg-opacity: .75;">
+			<p class="mx-auto text-center text-uppercase bg-success mt-3"> Wykres wydatków w zadanym okresie </p>
+			<div class= "mx-auto text-center" style="--bs-bg-opacity: .75;" id="piechart"></div>
+			</div>
+			</div>
+	
+    
+
+			<div class="bg-success text-center mt-5 text-uppercase"id ="bilans">
+				
+			</div>
+		</div>
+		
+		
+	</article>
+	
+	{% endblock %}

@@ -11,12 +11,12 @@
 	
 	<article>
 	<div class="container mt-5 text-light">
-			<form class="bg-success p-4 w-50 mx-auto " style="--bs-bg-opacity: .5;" action="login.php" method="post">
+			<form class="bg-success p-4 w-50 mx-auto " style="--bs-bg-opacity: .5;" action="/login/create" method="post">
 				<h2 class="h3 text-center mb-3"> Logowanie </h2>
 				
 				<div class="col-sm-8 col-lg-6 mb-3 mx-auto">
 					<label for="Email" class="form-label"> Adres Email: </label>
-					<input type ="email" class="form-control" id="Email" name="email"/>		
+					<input type ="email" class="form-control" id="Email" name="email" value="{{ email }}"/>		
 				</div>
 				
 				<div class="col-sm-8 col-lg-6 mb-3 w-md-50 mx-auto" >
