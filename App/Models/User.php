@@ -178,12 +178,28 @@ class User extends \Core\Model
 		
 		Mail::send($this->email, 'Aktywacja konta', $html, $text);   
     }
+	
+	public static function findByToken($hashed_token)
+    {
+        $sql = 'SELECT * FROM users WHERE activation_hash = :hashed_token';
+
+        $db = static::getDB();
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(':hashed_token', $hashed_token, PDO::PARAM_STR);
+
+        $stmt->setFetchMode(PDO::FETCH_CLASS, get_called_class());
+
+        $stmt->execute();
+
+        return $stmt->fetch();
+    }
 
     
     public static function activate($value)
     {
         $token = new Token($value);
         $hashed_token = $token->getHash();
+		$user = static::findByToken($hashed_token);
 
         $sql = 'UPDATE users
                 SET is_active = 1,
@@ -196,5 +212,29 @@ class User extends \Core\Model
         $stmt->bindValue(':hashed_token', $hashed_token, PDO::PARAM_STR);
 
         $stmt->execute();
+		
+		//load income categories();
+		
+		$userId = $user->id;		 
+		$sql = "INSERT INTO incomes_category_assigned_to_users SELECT 'NULL','$userId',name FROM incomes_category_default";
+		$db = static::getDB();
+        $stmt = $db->prepare($sql);
+		$stmt->execute();
+		
+		//load expenses categories
+		$sql = "INSERT INTO expenses_category_assigned_to_users SELECT 'NULL','$userId',name FROM expenses_category_default";
+		$db = static::getDB();
+        $stmt = $db->prepare($sql);
+		$stmt->execute();
+		
+		//load payment methods
+		$sql = "INSERT INTO payment_methods_assigned_to_users SELECT 'NULL','$userId',name FROM payment_methods_default";
+		$db = static::getDB();
+        $stmt = $db->prepare($sql);
+		$stmt->execute();
+
     }
+	
+	
+	
 }
