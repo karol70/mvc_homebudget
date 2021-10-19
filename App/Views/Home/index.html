@@ -4,6 +4,12 @@
 
 {% block body %}
 
+{% if current_user %}
+
+	<meta http-equiv="refresh" content="0;URL='http://localhost/menu/menu" />
+{% endif %}
+
+
     <header class="text-light">
 		 <h1 class="text-center display-1 text-uppercase text-weight-bold" >Budżet domowy </h1>
 		<p class="h2 text-center"> Przejmij kontrolę nad domowymi finansami i ciesz się zaoszczędzonymi pieniędzmi</p>
@@ -23,7 +29,11 @@
 					<label for="Password" class="form-label"> Hasło: </label>
 					<input type ="password" class="form-control" id="Password" name="password"/>				
 				</div>
-				
+				<div class="col-sm-8 col-lg-6 mb-3 w-md-50 mx-auto">
+					<label>
+						<input type="checkbox" name="remember_me" class="form-check-input"{% if remember_me %} checked ="checked" {% endif %}/> Zapamiętaj mnie 
+					</label>
+				</div>
 				
 				<div class="text-center">
 				
@@ -34,5 +44,4 @@
 			</form>
 		</div>
 	</article>
-
 {% endblock %}
