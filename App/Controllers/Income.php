@@ -27,9 +27,11 @@ class Income extends \Core\Controller
 
         } else {
 
-            Flash::addMessage('Błąd zalogowania, spróbuj ponownie', Flash::WARNING);
+            Flash::addMessage('Niepoprawne dane', Flash::WARNING);
 
-            View::renderTemplate('Menu/income.html');
+            View::renderTemplate('Menu/addIncome.html',[
+                'income' => $income
+            ]);
                 
         }
     }
