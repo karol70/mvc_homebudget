@@ -7,7 +7,7 @@ use App\Auth;
 
 class Incomes extends \Core\Model
 {
-	public $errors = [];
+	public $faults = [];
 	
 	public function __construct($data = [])
     {
@@ -34,55 +34,62 @@ class Incomes extends \Core\Model
 	public function validate()
 	{
 			
-			$amount = $this->amount;			
-			$amount = str_replace(',','.',$amount);
-			$this->amount = $amount;
+						
+			$this->amount = str_replace(',','.',$this->amount);
+			
+			if ($this->amount == '')
+			{
+				$this->faults[] = 'Wprowadź kwotę';
+			}
 		
-			if (!is_numeric($amount))
+			if (!is_numeric($this->amount))
 			{
-				$this->errors[] = "Kwota może zawierać jedynie cyfry";
+				$this->faults[] = 'Kwota może zawierać jedynie cyfry';
 			}
-			if ($amount == '')
-			{
-				$this->errors[] = "Wprowadź kwotę";
-			}
-			
+						
 			$dot = '.';
-			$isThere = strpos($amount, $dot);
+			$isThere = strpos($this->amount, $dot);
 			
-			if($isThere === true)
+			if($isThere == true)
 			{
-				$amountPart = explode(".",$amount);
+				$amountPart = explode(".",$this->amount);
 				
 				if(strlen($amountPart[0])>6)
 				{
-					$this->errors[] = "Maksymalna liczba cyfr przed przecinkiem wynosi 6";
+					$this->faults[] = 'Maksymalna liczba cyfr przed przecinkiem wynosi 6';
 				}	
 				
 				if(strlen($amountPart[1])>2)
 				{
-					$this->errors[] = "Maksymalna liczba cyfr po przecinku wynosi 2";
+					$this->faults[] = 'Maksymalna liczba cyfr po przecinku wynosi 2';
+				}
+			}
+			if($isThere == false)
+			{
+				if(strlen($this->amount)>6)
+				{
+					$this->faults[] = 'Maksymalna liczba cyfr kwoty całkowitej wynosi 6';
 				}
 			}
 			
+			
+				
+			
 			$date = $this->date;
 			
-			if(!$this->category)
+			if($this->category == NULL)
 			{
-				$this->errors[] = "Wybierz kategorię";
+				$this->faults[] = 'Wybierz kategorię';
 			}
 			
-			else{
-			$category = $this->category;
-			}
-			$comment = $this->comment;
+			
 		
 	}
 	public function save()
     {
 		$this->validate();
 		
-		if (empty($this->errors)) 
+		if (empty($this->faults)) 
 		{
 			if($user = Auth::getUser())
 			{
