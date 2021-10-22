@@ -33,6 +33,8 @@ class View
 			$twig->addGlobal('flash_messages',\App\Flash::getMessages());
 			$twig->addGlobal('incomes',\App\Models\Incomes::getAll());
 			$twig->addGlobal('expenses',\App\Models\Expenses::getAll());
+			$twig->addGlobal('userIncomes',\App\Models\Incomes::getAllUserIncomes());
+			$twig->addGlobal('userExpenses',\App\Models\Expenses::getAllUserExpenses());
 		}
 		echo $twig->render($template, $args);
 	}
