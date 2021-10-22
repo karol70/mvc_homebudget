@@ -31,10 +31,33 @@ class Incomes extends \Core\Model
 		}
 	}
 	
+	public static function getAllUserIncomes()
+	{
+		if($user = Auth::getUser())
+		{
+			$userId = $user->id;
+			if (isset($_SESSION['datefrom']) && isset($_SESSION['dateto']) )
+			{
+			$datefrom = $_SESSION['datefrom'];
+			$dateto =$_SESSION['dateto'] ;
+			}
+			else{
+			$datefrom = '';
+			$dateto = '';
+			}
+		
+			$db = static::getDB();
+			
+            $stmt = $db->query("SELECT name, SUM(amount) AS sum FROM incomes,incomes_category_assigned_to_users AS cat WHERE incomes.user_id = '$userId' AND cat.id = incomes.income_category_assigned_to_user_id AND date_of_income BETWEEN '$datefrom' AND '$dateto' GROUP BY name");
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $results;
+		}
+	}
+	
 	public function validate()
 	{
-			
-						
+									
 			$this->amount = str_replace(',','.',$this->amount);
 			
 			if ($this->amount == '')
@@ -72,9 +95,7 @@ class Incomes extends \Core\Model
 				}
 			}
 			
-			
-				
-			
+		
 			$date = $this->date;
 			
 			if($this->category == NULL)

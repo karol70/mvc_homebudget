@@ -13,8 +13,7 @@ class Income extends \Core\Controller
     {
         View::renderTemplate('Menu/income.html');
     }
-
-    
+   
     public function createAction()
     {
 		$income = new Incomes($_POST);

@@ -3,6 +3,9 @@
 {% block title %}Menu{% endblock %}
 {% block footer %}
 <script src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src ="/js/chart.js" ></script>
+<script type="text/javascript" src ="/js/balance.js" ></script>
+
 {% endblock %}
 {% block body %}
 	
@@ -11,32 +14,70 @@
 		<div class="container  col-sm-8 col-lg-6 mb-3 mx-auto text-light font-18">
 		
 				
-			<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3  col-4 col-lg-3"> Przychody </h5>
-		<div class="mb-3 mx-auto">		
-		
-		</div>	
-			
-			<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3  w-25"> Wydatki </h5>
-			
-			
-		<div class="mb-3 mx-auto">
-			
-		
-		</div>
-			
-			<div class=" mb-3 mx-auto bg-success" style="--bs-bg-opacity: .75;">
-			<p class="mx-auto text-center text-uppercase bg-success mt-3"> Wykres wydatków w zadanym okresie </p>
-			<div class= "mx-auto text-center" style="--bs-bg-opacity: .75;" id="piechart"></div>
-			</div>
-			</div>
-	
-    
-
-			<div class="bg-success text-center mt-5 text-uppercase"id ="bilans">
+				<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3  col-4 col-lg-3"> Przychody </h5>
 				
+			<div class="mb-3 mx-auto col-sm-8">		
+			
+				<table class ="table  bg-success table-striped table-bordered border-dark" cellpadding ="2" border =2  >
+						<thead class="thead-dark">
+						<th class ='text-center fs-4'>KATEGORIA</th>
+						<th class ='text-center fs-4'>Suma [PLN]</th>
+						</thead>
+						{% set totalsumincomes=0 %}
+						{% for income in userIncomes %}
+						
+							<tr class="table-success table-bordered border-dark">
+							<td style='width:50%' class ='text-center fs-5 fw-bold' data-entry-id="{{income.id}}" >{{income.name}}</td>
+							<td class='text-center fs-5 fw-bold'>{{income.sum}}</td>
+							{% set totalsumincomes = totalsumincomes + income.sum %}
+							</tr>
+								
+							{% endfor %}
+							<tr>
+						<td style='width:50%' class ='text-center'><h4>SUMA</h4></td>
+						<td class='text-center' id='incomessum'><h4>{{totalsumincomes|number_format(2, '.', '')}}</h4></td>
+						</tr>
+				</table>
+			</div>	
+				
+				<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3  w-25"> Wydatki </h5>
+				
+				
+			<div class="mb-3 mx-auto col-sm-8">
+				 <table class ="table bg-success table-striped table-bordered border-dark" cellpadding ="2" border =2 id="myTable">
+						<thead class="thead-dark">
+							<th class ='text-center fs-4'>KATEGORIA</th>
+							<th class ='text-center fs-4'>Suma [PLN]</th>
+						</thead>
+						
+						{% set totalsumexpense=0 %}
+						{% for expense in userExpenses %}
+						
+						<tr class="table-success table-bordered border-dark">
+							<td style='width:50%' class='text-center fs-5 fw-bold' >{{expense.name}}</td>
+							<td class='text-center fs-5 fw-bold'>{{expense.sum}}</td>
+							{% set totalsumexpense = totalsumexpense + expense.sum %}
+						
+						</tr>								
+						{% endfor %}
+						
+						<tr>
+							<td style='width:50%' class='text-center'><h4>SUMA</h4></td>
+							<td class='text-center' id='expensessum'><h4>{{totalsumexpense|number_format(2, '.', '')}}</h4></td>
+						</tr>
+				</table>
+			
 			</div>
+				
+				
+				<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-3 col-sm-10 "> Wykres wydatków w zadanym okresie </h5>
+				<div class= "mx-auto text-center bg-success col-sm-10" style="--bs-bg-opacity: .75;" id="piechart"></div>
+				
+			<div class="text-center mt-5 text-uppercase fs-5 fw-bold"id ="balance"></div>
+				
+			
 		</div>
-		
+	
 		
 	</article>
 	

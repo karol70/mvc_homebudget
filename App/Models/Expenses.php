@@ -31,6 +31,32 @@ class Expenses extends \Core\Model
 		}
 	}
 	
+	public static function getAllUserExpenses()
+	{
+		if($user = Auth::getUser())
+		{
+			$userId = $user->id;
+			if (isset ($_SESSION['datefrom'])&&isset($_SESSION['dateto']))
+			{
+			$datefrom = $_SESSION['datefrom'];
+			$dateto =$_SESSION['dateto'] ;
+			}
+			else
+			{
+			$datefrom = '';
+			$dateto ='' ;
+			}
+			
+		
+			$db = static::getDB();
+
+            $stmt = $db->query("SELECT name, SUM(amount) AS sum FROM expenses,expenses_category_assigned_to_users AS cat WHERE expenses.user_id = '$userId' AND cat.id = expenses.expense_category_assigned_to_user_id AND date_of_expense BETWEEN '$datefrom' AND '$dateto' GROUP BY name");
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            return $results;
+		}
+	}
+	
 	public function validate()
 	{
 			
