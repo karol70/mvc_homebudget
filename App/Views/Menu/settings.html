@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+{% block footer %}
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src ="/js/settings.js" ></script>
+	<script type="text/javascript" src ="/js/incomes.js" ></script>
+
+
+{% endblock %}
+{% block body %}
+	
+	<article>
+		
+		<div class="container  col-sm-8 col-lg-6 mb-4 mx-auto text-light font-18">
+			<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-4 mb-3  col-4 col-lg-3 rounded"> Ustawienia </h5>
+			
+			<button  class="cat btn btn-success" value="expenses_category_">Kategorie wydatków</button>
+			<button  class="cat btn btn-success" value="incomes_category_">Kategorie przychodów</button>	
+			<button  class="cat btn btn-success" value="payment_methods_">Kategorie metod płatności</button>	
+			
+						
+			<div class="list-group mt-2" id="data">
+				
+				
+			</div>
+				
+	
+		</div>
+	
+		
+	</article>
+	
+	{% endblock %}

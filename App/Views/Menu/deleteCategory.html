@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+{% block footer %}
+	
+{% endblock %}
+{% block body %}
+	
+	<article>
+		
+		<div class="container  col-sm-8 col-lg-6 mb-4 mx-auto text-light font-18">
+			<h5 class="h3 mx-auto text-center text-uppercase bg-success mt-4 mb-3  col-4 col-lg-3 rounded"> Ustawienia </h5>
+			
+			<form class="bg-warning p-4 mx-auto " style="--bs-bg-opacity: .5;" method="post" action="/setting/deleteCategoryIfExist">
+			
+				<h5 class="h3 mx-auto text-center text-danger mt-4 mb-3 rounded"> Uwaga! W kategorii, którą chcesz usunąć istnieją zapisane wydatki! </h5>
+			
+				<label for="deleteCat" class="form-label"> Wybierz opcję: </label>	
+				
+				<select size="3" id="deleteCat" name="deleteCat" class="form-select overflow-hidden" required>
+					<option  value="delete">Usuń zapisane wydatki w tej kategorii</option>
+					<option  value="transfer">Przenieś zapisane wydatki do kategorii "Inne"</option>	
+					<option  value="cancel">Anuluj</option>	
+				</select>
+				
+				<input type="submit" class="btn btn-success mt-3" value="OK"/>
+				
+			</form>				
+	
+		</div>
+	
+		
+	</article>
+	
+	{% endblock %}

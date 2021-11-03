@@ -29,6 +29,10 @@ class Menu extends Authenticated
 	{	
 		View::renderTemplate('Menu/addExpense.html');
 	}
+	public function settingsAction()
+	{	
+		View::renderTemplate('Menu/settings.html');
+	}
 	
 	public function currentmonthAction()
 	{	
