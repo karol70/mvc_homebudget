@@ -11,6 +11,12 @@ body
 	overflow-x:hidden;
 	overflow-y: auto;
 }
+option:hover
+{
+	backgroundColor: #42ba96;
+	
+}
+
 
 /*
 #piechart
@@ -24,8 +30,5 @@ body
 }
 
 */
-.error
-{
-	color:red;
-	margin-bottom: 5px;
-}
+
+
