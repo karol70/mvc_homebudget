@@ -73,9 +73,36 @@ class Setting extends \Core\Controller
 	
 	public function setLimitAction()
 	{
-		$var = $_SESSION['category'];
-		Flash::addMessage("$var", Flash::WARNING);
-		View::renderTemplate('Menu/settings.html');
+		if(isset($_POST['setOrUnsetLimit']) && $_POST['setOrUnsetLimit']== 'set')
+		{
+			$editCategory = new Setchanges($_POST);
+			
+			if($editCategory->setLimit())
+			{
+				Flash::addMessage("Ustawiono limit dla wybranej kategorii");
+				View::renderTemplate('Menu/settings.html');
+			}
+			else
+			{
+				Flash::addMessage("Błędne dane, spróbuj ponownie", Flash::WARNING);
+				View::renderTemplate('Menu/settings.html');
+			}
+		}
+		if(isset($_POST['setOrUnsetLimit']) && $_POST['setOrUnsetLimit']== 'unset')
+		{
+			$editCategory = new Setchanges($_POST);
+			
+			if($editCategory->unsetLimit())
+			{
+				Flash::addMessage("Zdjęto limit dla wybranej kategorii");
+				View::renderTemplate('Menu/settings.html');
+			}
+			else
+			{
+				Flash::addMessage("Błędne dane, spróbuj ponownie", Flash::WARNING);
+				View::renderTemplate('Menu/settings.html');
+			}
+		}
 	}
    
 }
