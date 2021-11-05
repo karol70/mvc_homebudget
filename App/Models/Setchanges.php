@@ -6,8 +6,7 @@ use PDO;
 use App\Auth;
 
 class Setchanges extends \Core\Model
-{
-			
+{			
 	public function __construct($data = [])
     {
         foreach ($data as $key => $value) {
@@ -231,6 +230,89 @@ class Setchanges extends \Core\Model
 			$db = static::getDB();
 			$stmt = $db->prepare($sql);
 			$stmt->execute();
+	}
+	
+	public function setLimit()
+	{
+		
+		if($this->validate())
+		{
+			if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				
+				$sql = "UPDATE expenses_category_assigned_to_users SET expense_limit="."'$this->limitamount'"." WHERE name="."'$this->categorylimit'"." AND user_id="."'$userId'";
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				$stmt->execute();
+				return true;
+			}
+		}
+		else return false;
+		
+	}
+	public function unsetLimit()
+	{
+		if($this->categorylimit !== NULL)
+		{
+			if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				
+				$sql = "UPDATE expenses_category_assigned_to_users SET expense_limit=NULL WHERE name="."'$this->categorylimit'"." AND user_id="."'$userId'";
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				$stmt->execute();
+				return true;
+			}
+		}
+		else return false;
+	}
+	
+	public function validate()
+	{
+			$_POST['limitamount'] = str_replace(',','.',$_POST['limitamount']);
+			
+			if ($this->limitamount == '')
+			{
+				return false;
+			}
+		
+			if (!is_numeric($this->limitamount))
+			{
+				return false;
+			}
+						
+			$dot = '.';
+			$isThere = strpos($this->limitamount, $dot);
+			
+			if($isThere == true)
+			{
+				$amountPart = explode(".",$this->limitamount);
+				
+				if(strlen($amountPart[0])>6)
+				{
+					return false;
+				}	
+				
+				if(strlen($amountPart[1])>2)
+				{
+					return false;
+				}
+			}
+			if($isThere == false)
+			{
+				if(strlen($this->limitamount)>6)
+				{
+					return false;
+				}
+			}
+			
+			if($this->categorylimit == NULL)
+			{
+				return false;
+			}
+			return true;
 	}
 	
 }
