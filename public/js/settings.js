@@ -1,5 +1,5 @@
 $(document).ready(function(){
-			//var open = false;
+			
 			$(".cat").click(function(){
 			var name = $(this).val();
 			

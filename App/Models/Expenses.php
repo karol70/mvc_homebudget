@@ -5,6 +5,7 @@ namespace App\Models;
 use PDO;
 use App\Auth;
 
+
 class Expenses extends \Core\Model
 {
 	public $faults = [];
@@ -24,7 +25,7 @@ class Expenses extends \Core\Model
 		
 			$db = static::getDB();
 
-            $stmt = $db->query("SELECT name FROM expenses_category_assigned_to_users WHERE user_id ='$userId'");
+            $stmt = $db->query("SELECT * FROM expenses_category_assigned_to_users WHERE user_id ='$userId'");
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             return $results;
@@ -129,7 +130,7 @@ class Expenses extends \Core\Model
 				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				$methodid = $results[0];
 				$methodid = $methodid['id'];
-				var_dump($methodid);
+				
 				
 			
 				$sql = "INSERT INTO expenses(user_id, expense_category_assigned_to_user_id, payment_method_assigned_to_user_id, amount, date_of_expense, expense_comment) 
@@ -152,5 +153,97 @@ class Expenses extends \Core\Model
 		{
 			return false;
 		}
+	}
+	
+	public function isLimitSet($category)
+	{
+		if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$db = static::getDB();
+				$sql = "SELECT * FROM expenses_category_assigned_to_users WHERE user_id ="."$userId"." AND name="."'$category'";
+				$stmt = $db->prepare($sql);
+				$stmt->execute();
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				foreach($results as $result)
+				{
+					return $result['expense_limit'];
+				}
+				return false;
+			}
+	}
+	public function sumIfExpenseAdded()
+	{
+		$month = date("m");
+		$year = date("Y");
+		$days = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+		$dateFrom = $year."-".$month."-"."01";
+		$dateTo = $year."-".$month."-".$days;
+		if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$category = $this->categoryName;
+				$db = static::getDB();
+				$sql = "SELECT SUM(amount) AS sum FROM expenses,expenses_category_assigned_to_users AS cat WHERE expenses.user_id = '$userId'  AND cat.id = expenses.expense_category_assigned_to_user_id AND cat.name ='$category' AND date_of_expense BETWEEN '$dateFrom' AND '$dateTo'";
+				$stmt = $db->prepare($sql);
+				$stmt->execute();
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				foreach ($results as $result)
+				{
+					return $result['sum'];
+				}
+				return 0;
+			}
+		
+	}
+	public function checkLimit()
+	{		
+		$category = $this->categoryName;
+		$limit = $this->isLimitSet($category);
+		$amount = $this->amount;
+		
+		$amount = number_format($amount, 2, '.', '');
+		if($limit != false)
+		{
+			$limit = number_format($limit, 2, '.', '');
+			$expenseSum = $this->sumIfExpenseAdded();
+			$expenseSum = number_format($expenseSum , 2, '.', '');
+			if($limit >= $expenseSum  + $amount)
+			{				
+				$class = "bg-success";
+			}
+			if($limit < $expenseSum  + $amount)
+			{
+				
+				$class = "bg-danger";
+			}
+				$diff = $limit - $expenseSum;
+				$diff = number_format($diff , 2, '.', '');
+				$sum = $expenseSum + $amount;
+				$sum = number_format($sum , 2, '.', '');
+				
+echo 			"<div class='$class d-flex flex-row text-center rounded'>
+
+				<div class='d-inline p-1 w-25'>
+				<p>Limit: </p>$limit
+				</div>
+				
+				<div class='d-inline p-1 w-25'>
+				<p class='font-weight-bold'>Dotychczas wydano: </p>$expenseSum
+				</div>
+				
+				<div class='d-inline p-1 w-25'>
+				<p class='font-weight-bold'>Różnica: </p> $diff
+				</div>
+				
+				<div class='d-inline p-1 w-25'>
+				<p class='font-weight-bold'>Wydatki + wpisana kwota:</p> $sum
+				</div>
+
+				</div>";
+		}
+		
+		
+		
 	}
 }
