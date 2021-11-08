@@ -2,17 +2,24 @@
 
 {% block title %}Menu{% endblock %}
 
+{% block footer %}	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src ="/js/checklimit.js" ></script>
+{% endblock %}
+
 
 {% block body %}
 
 	<article>
 	
-		<div class="container mt-5 text-light">
+		<div class="container mt-3 text-light">
+		
+		<div id="log" class="position-relative mb-2 "></div>
 		
 		 <form class="bg-success p-4 w-50 mx-auto " style="--bs-bg-opacity: .5;" method="post" action="/expense/create">
 		
 		 <h2 class="text-uppercase text-center mx-auto mb-4">Dodaj wydatek</h2>
-		
+			
 				<div class="form-inline col-sm-8 col-lg-6 mb-3 mx-auto">
 					<label class="text-uppercase" for="amount"> Kwota: </label>
 					<input class="form-control" type="text" name="amount" id="amount" required>				
@@ -56,9 +63,15 @@
 				
 				<div class="form-group mt-3 col-sm-8 col-lg-6 mx-auto">
 					<label class="text-uppercase" for="category"> Kategoria wydatku: </label>
-					<select class="form-control" size="6" id="category" name="category">					
+					<select class="form-control" size="6" id="category" name="category" required>					
 						{% for expense in expenses %}
-							<option value="{{expense.name}}" selected required>{{expense.name}}</option>
+							<option id="{{expense.name}}"  value="{{expense.name}}" >{{expense.name}}
+								{% if expense.expense_limit is not null %}
+									<p> Limit: {{expense.expense_limit}}</p>
+								{% endif %}
+							</option>
+							
+							
 						{% endfor %}
 					</select>
 					

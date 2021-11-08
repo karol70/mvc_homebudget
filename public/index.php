@@ -29,6 +29,8 @@ $router->add('signup/activate/{token:[\da-f]+}', ['controller' => 'Signup', 'act
 $router->add('logout', ['controller' => 'Login', 'action' => 'destroy']);
 $router->add('login', ['controller' => 'Login', 'action' => 'new']);
 $router->add('categories', ['controller' => 'Setting', 'action' => 'new']);
+$router->add('limit', ['controller' => 'Expense', 'action' => 'isLimit']);
+
 
 
 

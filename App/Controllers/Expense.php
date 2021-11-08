@@ -35,4 +35,14 @@ class Expense extends \Core\Controller
                 
         }
     }
+	
+	public function isLimitAction()
+	{
+		$limit = new Expenses($_POST);
+		if($limit->checkLimit())
+		{
+			echo "WOW";
+		}
+		
+	}
 }
