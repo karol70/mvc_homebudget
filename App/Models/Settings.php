@@ -81,7 +81,7 @@ echo'			</tr>
 			
 			if($_SESSION['category']=="expenses_category_")
 			{
-				echo '<button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#limit" >Edytuj kategorię</button> ';
+				echo '<button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#limit" >Ustaw lub zdejmij limit</button> ';
 				echo '<button class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#add"" >Dodaj kategorię</button>';
 				echo '<button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#delete" >Usuń kategorię</button> ';
 			}
@@ -215,6 +215,81 @@ echo'			<div class="modal fade text-dark" id="add" tabindex="-1" role="dialog" a
 				</div>';
 			
 		}
+	}
+	
+	public static function viewUserSettings()
+	{
+		$user = Auth::getUser();
+
+
+echo"	<div class='fw-bold d-flex mx-auto mt-3 p-2'>
+			<div class='d-flex-column mx-5 text-success'>
+				<p class='text-uppercase'> Dane użytkownika: </p>			
+				<p>Nazwa użytkownika:<br/> $user->username </p>
+				<p>Email:<br/> $user->email</p>
+			</div>";
+		
+echo'   	<div class=" d-flex w-75">
+				<div class=" d-flex-column ">
+				<div class ="block">
+					<a href="/setting/edit" type="button" class="btn btn-success mt-1 mb-2 w-100">Edytuj swoje dane</a> 
+				</div>
+				<div class ="block">
+					<button type="button" class="btn btn-danger my-2 w-100" data-bs-toggle="modal" data-bs-target="#deleteIncomesAndExpenses" >Usuń wszystkie przychody i wydatki</button>
+				</div>
+				<div class ="block">
+					<button type="button" class="btn btn-danger my-2 w-100" data-bs-toggle="modal" data-bs-target="#deleteAccount" >Usuń moje konto</button>
+				</div>
+			</div>
+		</div>';
+	
+echo'			
+							
+			<div class="modal fade text-dark" id="deleteIncomesAndExpenses" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Usuń wszystkie przychdy i wydatki</h5>
+								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+								<div class="modal-body">
+									<p> Czy na pewno chcesz usunąć wszystkie przychody i wydatki? </p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+									<a href="/setting/deleteTransactions" class="btn btn-warning" > Usuń </a>
+								</div>
+							
+						
+						</div>
+					</div>
+				</div>
+				
+			<div class="modal fade text-dark" id="deleteAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Usuń konto</h5>
+								<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							
+									<div class="modal-body">
+										<p> Czy na pewno chcesz usunąć swoje konto? </p>
+									</div>
+								<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+										<a href="/setting/deleteAccount" class="btn btn-warning">Usuń konto </a>
+								</div>
+							
+						
+						</div>
+					</div>
+				</div>';
+		
 	}
 	
 }

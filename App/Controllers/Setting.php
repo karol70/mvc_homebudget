@@ -15,6 +15,13 @@ class Setting extends \Core\Controller
         Settings::getAllCategories();
     }
 	
+	public function userSettingsAction()
+    {
+        Settings::viewUserSettings();
+		
+    }
+	
+	
 	public function addCategoryAction()
 	{
 		$addCategory = new Setchanges($_POST);
@@ -65,7 +72,7 @@ class Setting extends \Core\Controller
 		}
 		else
 		{
-			Flash::addMessage("Błąd", Flash::WARNING);
+			Flash::addMessage("Operacja usunięcia kategorii została anulowana");
 			View::renderTemplate('Menu/settings.html');
 		}
 		
@@ -103,6 +110,65 @@ class Setting extends \Core\Controller
 				View::renderTemplate('Menu/settings.html');
 			}
 		}
+	}
+	
+	
+	public function editAction()
+	{
+		View::renderTemplate('setting/edit.html',[
+			'user' => Auth::getUser()
+		]);
+	}
+	
+	public function updateAction()
+	{
+		$user = Auth::getUser();
+		
+		if($user->updateProfile($_POST))
+		{
+			Flash::addMessage("Zmiany zostały zapisane");
+			View::renderTemplate('Menu/settings.html');
+		}
+		else
+		{
+			View::renderTemplate('setting/edit.html',[
+			'user' => Auth::getUser()
+		]);
+		}
+	}
+	
+	public function deleteTransactionsAction()
+	{
+		$deleteTransaction = new Setchanges();
+		if($deleteTransaction->deleteAllTransactions())
+		{
+			Flash::addMessage("Wszystkie transakcje zostały usunięte");
+			View::renderTemplate('Menu/settings.html');
+		}
+		else
+		{
+			Flash::addMessage("Wystąpił błąd, spróbuj ponownie", Flash::WARNING);
+			View::renderTemplate('Menu/settings.html');
+		}
+	}
+	
+	public function deleteAccountAction()
+	{
+		
+		
+		if(Setchanges::deleteAccount())
+		{			
+			Auth::logout();
+			Flash::addMessage("Konto zostało usunięte");
+			View::renderTemplate('Home/index.html');
+		}
+		else
+		{
+			Flash::addMessage("Wystąpił błąd, spróbuj ponownie", Flash::WARNING);
+			View::renderTemplate('Home/index.html');
+		}
+			
+		
 	}
    
 }

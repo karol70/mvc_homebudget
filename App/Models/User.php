@@ -222,7 +222,7 @@ class User extends \Core\Model
 		$stmt->execute();
 		
 		//load expenses categories
-		$sql = "INSERT INTO expenses_category_assigned_to_users SELECT 'NULL','$userId',name FROM expenses_category_default";
+		$sql = "INSERT INTO expenses_category_assigned_to_users SELECT 'NULL','$userId',name,expense_limit FROM expenses_category_default";
 		$db = static::getDB();
         $stmt = $db->prepare($sql);
 		$stmt->execute();
@@ -234,6 +234,45 @@ class User extends \Core\Model
 		$stmt->execute();
 
     }
+	
+	public function updateProfile($data)
+	{
+		$this->name = $data['name'];
+		$this->email = $data['email'];
+		
+		if($data['password'] != '')
+		{
+			$this->password = $data['password'];
+		}
+		
+		$this->validate();
+		if(empty($this->errors))
+		{
+			$sql = 'Update users 
+			SET username =:name, 
+			email =:email';
+			if (isset($this->password))
+			{
+			$sql .=', password = :password_hash';
+			}
+			$sql .=' WHERE id= :id';
+			
+			$db = static::getDB();
+			$stmt = $db->prepare($sql);
+			
+			$stmt->bindValue(':name', $this->name,PDO::PARAM_STR);
+			$stmt->bindValue(':email', $this->email,PDO::PARAM_STR);
+			$stmt->bindValue(':id', $this->id,PDO::PARAM_STR);
+			
+			if(isset($this->password)){
+				$password_hash = password_hash($this->password, PASSWORD_DEFAULT);
+				$stmt->bindValue(':password_hash', $password_hash,PDO::PARAM_STR);
+			}
+			return $stmt->execute();
+		}
+		return false;
+		
+	}
 	
 	
 	

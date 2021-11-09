@@ -315,4 +315,58 @@ class Setchanges extends \Core\Model
 			return true;
 	}
 	
+	public static function deleteAllTransactions()
+	{
+		if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$sql = "DELETE FROM expenses WHERE user_id ='$userId'";	
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				if($stmt->execute())
+				{
+					$sql = "DELETE FROM incomes WHERE user_id ='$userId'";	
+					$db = static::getDB();
+					$stmt = $db->prepare($sql);
+					return $stmt->execute();
+				}
+			}
+			return false;
+	}
+	
+	public static function deleteAccount()
+	{
+		if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$sql1 ="DELETE FROM users WHERE id ='$userId'";
+				$sql2 ="DELETE FROM expenses_category_assigned_to_users WHERE user_id ='$userId'";
+				$sql3 ="DELETE FROM incomes_category_assigned_to_users WHERE user_id ='$userId'";
+				$sql4 ="DELETE FROM payment_methods_assigned_to_users WHERE user_id ='$userId'";
+				Setchanges::deleteAllTransactions();
+				
+				
+				$db = static::getDB();
+				$stmt = $db->prepare($sql4);
+				if($stmt->execute())
+				{				
+					$stmt = $db->prepare($sql3);
+					if($stmt->execute())
+					{
+						$stmt = $db->prepare($sql2);
+						if($stmt->execute())
+						{
+							$stmt = $db->prepare($sql1);
+							if($stmt->execute())
+							{
+								return true;
+							}
+						}
+					}
+				}
+				return false;
+				
+			}
+	}
+	
 }

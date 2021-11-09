@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Edit{% endblock %}
 {% block footer %}
     <script src="/js/hideShowPass.js"></script>
 	
@@ -8,20 +8,27 @@
 
     <script>
         $(document).ready(function() {
-
+			
+			var userId = '{{ user.id }}' ;
            
-            $('#formSignup').validate({
+            $('#formProfile').validate({
                 rules: {
                     name: 'required',
                     email: {
                         required: true,
                         email: true,
-                        remote: '/account/validate-email'
+                        remote: {
+							url:'/account/validate-email',
+							data: {
+								ignore_id: function(){
+								return userId;
+								}
+							}
+						}
                     },
                     password: {
-                        required: true,
                         minlength: 6,
-                        validPassword: true
+                        validPassword: true						
                     }
                 },
                 messages: {
@@ -30,7 +37,7 @@
 						validPassword: 'Hasło musi zawierać co najmniej 1 literę oraz cyfrę'
 					},	
                     email: {
-						required: 'Email jest wymagany',
+                        required: 'Email jest wymagany',
 						email: 'Wprowadź poprawny format adresu email',
                         remote: 'Email jest już zajęty'
                     },
@@ -46,20 +53,15 @@
 {% endblock %}
 {% block body %}
 
-    <header class="text-light">
-		 <h1 class="text-center display-1 text-uppercase text-weight-bold" >Budżet domowy </h1>
-		<p class="h2 text-center mb-5"> Przejmij kontrolę nad domowymi finansami i ciesz się zaoszczędzonymi pieniędzmi</p>
-	</header>
-	
 	<main>
 	<div class="container align-middle text-light">	
 
 	
-			<form method="post" action="/signup/create" id="formSignup" class="bg-success p-4 w-50 mx-auto " style="--bs-bg-opacity: .5;">
-				<h2 class="h3 text-center mb-3"> Rejestracja </h2>
+			<form method="post" action="/setting/update" id="formProfile" class="bg-success p-4 w-50 mx-auto mt-5 " style="--bs-bg-opacity: .5;">
+				<h2 class="h3 text-center mb-3"> Edycja danych konta </h2>
 				<div class=" form-group col-sm-8 col-lg-6 mb-3  mx-auto">
-					<label for="inputName" class="form-label"> Imię: </label>
-					<input type ="text" class="form-control" value="{{ user.name }}" id="inputName" name="name" required autofocus>		
+					<label for="inputName" class="form-label">  Nazwa użytkownika: </label>
+					<input type ="text" class="form-control" value="{{ user.username }}" id="inputName" name="name" required >		
 				</div>
 				
 				<div class="form- group col-sm-8 col-lg-6 mb-3 w-md-50 mx-auto" >
@@ -70,19 +72,20 @@
 				
 				<div class="form-group col-sm-8 col-lg-6 mb-3 w-md-50 mx-auto" >
 					<label for="inputPassword" class="form-label"> Hasło: </label>	
-						<input type ="password" class="form-control" id="inputPassword" name="password" required>
-
+						<input type ="password" class="form-control" id="inputPassword" name="password" aria-describedby="helpBlock"/>
+						<span id="helpBlock">Pole nie jest wymagane jeżeli chcesz zachować dotychczasowe hasło</span>						
 				</div>
+				
+				
 				<div class="form-group col-sm-8 col-lg-6 mb-3 w-md-50 mx-auto" >
 					<input type="checkbox" class="form-check-input" role="switch" id="btncheck" onclick="HideShowPass()">
 					<label class="form-check-label" for="btncheck">Pokaż hasło</label>
 				</div>
 				
 				
-				
 				<div class="text-center">
-					<input type="submit" class="btn btn-success mx-auto " value="Utwórz konto"/>
-					<a href="/home/index"><div class="btn btn-secondary mx-1"> Powrót do logowania</div></a>
+					<input type="submit" class="btn btn-success mx-auto " value="Zapisz zmiany"/>
+					<a href="/menu/settings"><div class="btn btn-secondary mx-1"> Anuluj</div></a>
 				</div>
 				
 				

@@ -7,5 +7,13 @@ $(document).ready(function(){
 					name: name
 					});
 			});
+			
+			$(".user").click(function(){
+			var name = $(this).val();
+			
+				$("#data").load("/usersettings", {
+					name: name
+					});
+			});
 		
 		});
