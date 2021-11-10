@@ -12,7 +12,7 @@
 		document.getElementById("balance").innerHTML = "Bilans: "+diff+"PLN  Gratulacje. Świetnie zarządzasz finansami!";
 		document.getElementById("balance").style.backgroundColor = "green";
 	}
-	else
+	else if(incomessum < expensessum)
 	{
 		var diff = expensessum - incomessum ;
 		document.getElementById("balance").innerHTML = "Bilans: -"+diff+"PLN  Uważaj, wpadasz w długi!";

@@ -6,6 +6,7 @@ use \Core\View;
 use \App\Models\Expenses;
 use \App\Auth;
 use \App\Flash;
+use \App\Models\showExpenses;
 
 class Expense extends \Core\Controller
 {
@@ -39,10 +40,20 @@ class Expense extends \Core\Controller
 	public function isLimitAction()
 	{
 		$limit = new Expenses($_POST);
-		if($limit->checkLimit())
+		$limit->checkLimit();
+
+	}
+	
+	public function showExpensesAction()
+	{
+		showExpenses::showAllExpenses($_POST);
+	}
+	
+	public function deleteExpenseAction()
+	{
+		if(showExpenses::deleteExpense($_POST))
 		{
-			echo "WOW";
+			Flash::addMessage('Usunięto wybraną transakcję');
 		}
-		
 	}
 }
