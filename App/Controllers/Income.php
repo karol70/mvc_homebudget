@@ -6,6 +6,7 @@ use \Core\View;
 use \App\Models\Incomes;
 use \App\Auth;
 use \App\Flash;
+use \App\Models\showIncomes;
 
 class Income extends \Core\Controller
 {
@@ -34,4 +35,15 @@ class Income extends \Core\Controller
                 
         }
     }
+	public function showIncomesAction()
+	{
+		showIncomes::showAllIncomes($_POST);
+	}
+	public function deleteIncomeAction()
+	{
+		if(showIncomes::deleteIncome($_POST))
+		{
+			Flash::addMessage('Usunięto wybraną transakcję');
+		}
+	}
 }
