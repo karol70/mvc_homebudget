@@ -6,9 +6,7 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 
 
 
-$loader = new \Twig\Loader\ArrayLoader([
-   'index' => 'Hello {{ name }}!',
-]);
+$loader = new \Twig\Loader\ArrayLoader();
 $twig = new \Twig\Environment($loader);
 
 

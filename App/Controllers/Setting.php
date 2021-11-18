@@ -80,7 +80,7 @@ class Setting extends \Core\Controller
 	
 	public function setLimitAction()
 	{
-		if(isset($_POST['setOrUnsetLimit']) && $_POST['setOrUnsetLimit']== 'set')
+		if(isset($_POST['setOrUnsetLimit']))
 		{
 			$editCategory = new Setchanges($_POST);
 			
@@ -95,7 +95,7 @@ class Setting extends \Core\Controller
 				View::renderTemplate('Menu/settings.html');
 			}
 		}
-		if(isset($_POST['setOrUnsetLimit']) && $_POST['setOrUnsetLimit']== 'unset')
+		if(empty($_POST['setOrUnsetLimit']))
 		{
 			$editCategory = new Setchanges($_POST);
 			
@@ -115,7 +115,7 @@ class Setting extends \Core\Controller
 	
 	public function editAction()
 	{
-		View::renderTemplate('setting/edit.html',[
+		View::renderTemplate('Setting/edit.html',[
 			'user' => Auth::getUser()
 		]);
 	}
@@ -131,7 +131,7 @@ class Setting extends \Core\Controller
 		}
 		else
 		{
-			View::renderTemplate('setting/edit.html',[
+			View::renderTemplate('Setting/edit.html',[
 			'user' => Auth::getUser()
 		]);
 		}

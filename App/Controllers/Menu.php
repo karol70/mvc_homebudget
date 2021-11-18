@@ -87,4 +87,17 @@ class Menu extends Authenticated
 		
 		View::renderTemplate('Menu/showBalance.html');
 	}
+	
+	public function balanceAction()
+	{
+		if( isset($_SESSION['datefrom']))
+		{
+			View::renderTemplate('Menu/showBalance.html');
+		}
+		else
+		{
+			Flash::addMessage("Wybierz okres, dla którego chcesz sprawdzić bilans w zakładce \"Przeglądaj bilans\"", Flash::WARNING);
+			View::renderTemplate('Menu/menu.html');
+		}
+	}
 }

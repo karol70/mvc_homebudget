@@ -1,35 +1,62 @@
 $(document).ready(function(){
-	var amount;
-	var categoryName
+	var amount=0;
+	var categoryName='';
 	
-	
-/*	
-	function showValues() {
-    var str = $( "form" ).serialize();
-    $( "#log" ).text( str );
-  }
-  $( "input[type='text']").on( "keydown", showValues );
-  $( "select" ).on( "change", showValues );
-  showValues();
-*/	
 	
 
-	if(($('#amount').keyup) && $('option').click(function() {
-		  		
-			amount = $("#amount").val();
-			
-			if (($("#category ")[0].selectedIndex >= 0) && amount !=''){
-					categoryName = $( "option:checked" ).val();
+
+$('#amount').keyup(updateValue);
+$('#category').change(updateCategory);
+
+var intRegex = /^\d+$/;
+var floatRegex = /^((\d+(\.\d *)?)|((\d*\.)?\d+))$/;
+var isNumber = true;
+
+function updateValue()
+{
+	amount = $("#amount").val();
+	if(intRegex.test(amount) || floatRegex.test(amount))
+	{
+		isNumber=true;
+		checkLimit();
+		$('.amountsum').html('');
+	}
+	else if(amount=='')
+	{
+		$('.amountsum').html('');
+		$('#log').html('');
+		isNumber=false;
+	}	
+	else
+	{		
+		$('.amountsum').html('Wprowadzona kwota nie jest liczbą');
+		isNumber=false;
+		$('#log').html('');
+	}
+	
+	
+}
+
+function updateCategory()
+{
+	categoryName = $( "option:selected" ).val();
+	checkLimit();
+}
+
+function checkLimit()
+{
+	if ( categoryName !='' && amount !=0 && isNumber==true){
 					
-							$('#log').load("/limit", {
-							categoryName: categoryName,
-							amount: amount
-							})
+					
+			$('#log').load("/limit", {
+			categoryName: categoryName,
+			amount: amount
+			})
 		
 			};
-	
-	})
-	);	
+}
+
+
 	
 		
 });
