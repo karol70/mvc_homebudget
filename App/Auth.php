@@ -20,7 +20,6 @@ class Auth
             if ($user->rememberLogin()) {
 
                 setcookie('remember_me', $user->remember_token, $user->expiry_timestamp, '/');
-                
             }
         }
     }
@@ -30,8 +29,7 @@ class Auth
     {
        
         $_SESSION = [];
-
- 
+		
         if (ini_get('session.use_cookies')) {
             $params = session_get_cookie_params();
 

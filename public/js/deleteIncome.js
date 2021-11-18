@@ -5,6 +5,6 @@ function deleteIncomeFunction(id)
 		$(document).load("/income/deleteIncome",{
 				id: id
 			});
-		window.location.reload(true);
+	
 	}
 }

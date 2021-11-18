@@ -12,7 +12,7 @@ class Expense extends \Core\Controller
 {
 	public function newAction()
     {
-        View::renderTemplate('Menu/addIncome.html');
+        View::renderTemplate('Menu/addExpense.html');
     }
 
     
@@ -44,6 +44,17 @@ class Expense extends \Core\Controller
 
 	}
 	
+	public function LimitAmountAction()
+	{
+		$limit = new Expenses($_POST);
+		$limit->getLimitAmount();
+	}
+	public function LimitActiveAction()
+	{
+		$limit = new Expenses($_POST);
+		$limit->getLimitActive();
+	}
+	
 	public function showExpensesAction()
 	{
 		showExpenses::showAllExpenses($_POST);
@@ -53,7 +64,40 @@ class Expense extends \Core\Controller
 	{
 		if(showExpenses::deleteExpense($_POST))
 		{
-			Flash::addMessage('Usunięto wybraną transakcję');
+			View::renderTemplate('Menu/showBalance.html');
+			Flash::addMessage('Usunięto wybraną transakcję');			
+		}
+	}
+	
+	public function setExpenseIdAction()
+	{
+		showExpenses::setExpenseId($_POST);
+	}
+	
+	
+	public function editExpenseAction()
+	{
+			View::renderTemplate('Menu/editExpense.html',[
+			'selectedExpenses'=>showExpenses::getExpenseData()
+			]);
+			
+	}
+	
+	public function updateAction()
+	{
+		$expense = new Expenses($_POST);
+		if($expense->updateExpense())
+		{
+			Flash::addMessage('Zmiany w wybranej transacji zostały zapisane');
+			View::renderTemplate('Menu/showBalance.html');			
+		}
+		else
+		{
+			Flash::addMessage('Niepoprawne dane', Flash::WARNING);
+
+            View::renderTemplate('Menu/editExpense.html',[
+                'expense' => $expense
+            ]);
 		}
 	}
 }

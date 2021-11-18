@@ -24,7 +24,7 @@ class Incomes extends \Core\Model
 		
 			$db = static::getDB();
 
-            $stmt = $db->query("SELECT name FROM incomes_category_assigned_to_users WHERE user_id ='$userId'");
+            $stmt = $db->query("SELECT * FROM incomes_category_assigned_to_users WHERE user_id ='$userId'");
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             return $results;
@@ -142,5 +142,31 @@ class Incomes extends \Core\Model
 		{
 			return false;
 		}
+	}
+	
+	public function updateIncome()
+	{
+		$this->validate();
+		if (empty($this->faults)) 
+		{
+			if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$db = static::getDB();
+				$stmt = $db->query("SELECT id FROM incomes_category_assigned_to_users WHERE user_id = '$userId' AND name ='$this->category'");
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				$catid = $results[0];
+				$catid = $catid['id'];
+				
+				$choosenIncomeId = $_SESSION['choosenIncomeId'];
+				$sql = "UPDATE incomes SET income_category_assigned_to_user_id = $catid, amount = $this->amount, date_of_income= '$this->date', income_comment='$this->comment' WHERE id = $choosenIncomeId";
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				return $stmt->execute();
+			}
+			
+		}
+		
+		
 	}
 }

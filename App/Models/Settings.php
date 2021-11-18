@@ -44,9 +44,9 @@ echo'		<thead>
 			<tr>
 			  <th scope="col">Lp.</th>
 			  <th scope="col">Kategoria</th>';
-			  if($col == 4)
+			  if($col == 5)
 			  {
-echo'			<th scope="col">Limit</th>';	  
+echo'			<th scope="col">Limit</th>';	  	  
 			  }
 echo'			</tr>
 		 </thead>
@@ -57,9 +57,9 @@ echo'			</tr>
 						echo '<tr>';
 						echo '<th scope="row">'.$number.'</th>';
 						echo '<td>'.$result['name'].'</td>';
-						 if($col == 4)
+						 if($col == 5)
 						{
-							if( $result['expense_limit'] !== NULL)
+							if( $result['expense_limit'] !== NULL && $result['is_limit_active']==1)
 							{
 								echo'<td>'.$result['expense_limit'].'</td>';
 							}
@@ -81,7 +81,7 @@ echo'			</tr>
 			
 			if($_SESSION['category']=="expenses_category_")
 			{
-				echo '<button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#limit" >Ustaw lub zdejmij limit</button> ';
+				echo '<button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#limit" onclick="setLimits()" >Ustaw lub zdejmij limit</button> ';
 				echo '<button class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#add"" >Dodaj kategorię</button>';
 				echo '<button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#delete" >Usuń kategorię</button> ';
 			}
@@ -104,6 +104,7 @@ echo'			<div class="modal fade text-dark" id="limit" tabindex="-1" role="dialog"
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
+							
 							<form method="post" action="/setting/setLimit">
 									<div class="modal-body">
 										<div class="form-inline mx-auto">
@@ -119,20 +120,14 @@ echo'			<div class="modal fade text-dark" id="limit" tabindex="-1" role="dialog"
 												}	
 											echo '</select>';
 											
-echo'										<div class="mt-2">
-												<input class="form-check-input" name="setOrUnsetLimit" type="radio" value="set" id="setLimit" onclick="var input=
+echo'											<div class="mt-2">
+												<input class="form-check-input" name="setOrUnsetLimit" type="checkbox" value="set" id="setOrUnsetLimit" onclick="var input=
 												document.getElementById('.'\'limitamount\''.'); if(this.checked){ input.disabled = false; input.focus();}else{input.disabled=true;}"/>
 											  <label class="form-check-label" for="setLimit">
 												Ustaw limit
 											  </label>
-											</div>
-											<div class="mt-1 mb-2 ">
-											  <input class="form-check-input" name="setOrUnsetLimit" type="radio" value="unset" id="deleteLimit" onclick="var input=
-												document.getElementById('.'\'limitamount\''.'); if(this.checked){ input.disabled = true; input.focus();}else{input.disabled=true;}"/>
-											  <label class="form-check-label" for="deleteLimit">
-												Zdejmij limit
-											  </label>
 											</div>';
+											
 											  
 echo'										<label for="limitamount" class="form-label"> Kwota: </label>
 											<input type="text" id="limitamount" name="limitamount" class="form-control" disabled="disabled" required/>

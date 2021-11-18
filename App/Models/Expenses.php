@@ -98,8 +98,7 @@ class Expenses extends \Core\Model
 					$this->faults[] = 'Maksymalna liczba cyfr kwoty całkowitej wynosi 6';
 				}
 			}
-			
-			
+						
 			
 			if($this->category == NULL)
 			{
@@ -155,6 +154,76 @@ class Expenses extends \Core\Model
 		}
 	}
 	
+	public function updateExpense()
+	{
+		$this->validate();
+		if (empty($this->faults)) 
+		{
+			if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$db = static::getDB();
+				$stmt = $db->query("SELECT id FROM expenses_category_assigned_to_users WHERE user_id = '$userId' AND name ='$this->category'");
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				$catid = $results[0];
+				$catid = $catid['id'];
+				
+				$db = static::getDB();
+				$stmt = $db->query("SELECT id FROM payment_methods_assigned_to_users WHERE user_id = '$userId' AND name ='$this->method'");
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				$methodid = $results[0];
+				$methodid = $methodid['id'];
+				
+				$choosenExpenseId = $_SESSION['choosenExpenseId'];
+				$sql = "UPDATE expenses SET expense_category_assigned_to_user_id = $catid, payment_method_assigned_to_user_id = $methodid, amount = $this->amount, date_of_expense= '$this->date', expense_comment='$this->comment' WHERE id = $choosenExpenseId";
+				$db = static::getDB();
+				$stmt = $db->prepare($sql);
+				return $stmt->execute();
+			}
+			
+		}
+		
+		
+	}
+	
+	public function getLimitActive()
+	{
+		$category = $this->categoryName;
+		if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$db = static::getDB();
+				$sql = "SELECT * FROM expenses_category_assigned_to_users WHERE user_id ="."$userId"." AND name="."'$category'";
+				$stmt = $db->prepare($sql);
+				$stmt->execute();
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				foreach($results as $result)
+				{		
+					if($result['is_limit_active']== 1)
+					echo '1';
+				}
+				echo 0;
+			}
+	}
+	public function getLimitAmount()
+	{
+		$category = $this->categoryName;
+		if($user = Auth::getUser())
+			{
+				$userId = $user->id;
+				$db = static::getDB();
+				$sql = "SELECT * FROM expenses_category_assigned_to_users WHERE user_id ="."$userId"." AND name="."'$category'";
+				$stmt = $db->prepare($sql);
+				$stmt->execute();
+				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				foreach($results as $result)
+				{				
+					echo $result['expense_limit'];
+				}
+				return false;
+			}
+	}
+	
 	public function isLimitSet($category)
 	{
 		if($user = Auth::getUser())
@@ -167,6 +236,7 @@ class Expenses extends \Core\Model
 				$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				foreach($results as $result)
 				{
+					if($result['is_limit_active']== 1)
 					return $result['expense_limit'];
 				}
 				return false;

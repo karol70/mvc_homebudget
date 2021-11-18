@@ -40,9 +40,9 @@
 				<div class="mt-3 col-sm-8 col-lg-6 mb-3 mx-auto">
 					<label class="text-uppercase mb-1" > Kategoria: </label>
 					
-					<select class="form-control" size="4" id="category" name="category">
+					<select class="form-control" size="4" id="category" required name="category">
 						{% for income in incomes %}
-							<option value="{{income.name}}" selected required>{{income.name}}</option>
+							<option value="{{income.name}}"  >{{income.name}}</option>
 						{% endfor %}					
 					</select>
 					

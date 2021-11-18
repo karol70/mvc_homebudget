@@ -5,6 +5,6 @@ function deleteExpenseFunction(id)
 		$(document).load("/expense/deleteExpense",{
 				id: id
 			});
-		window.location.reload(true);
+		
 	}
 }

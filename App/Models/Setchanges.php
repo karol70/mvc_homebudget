@@ -241,7 +241,7 @@ class Setchanges extends \Core\Model
 			{
 				$userId = $user->id;
 				
-				$sql = "UPDATE expenses_category_assigned_to_users SET expense_limit="."'$this->limitamount'"." WHERE name="."'$this->categorylimit'"." AND user_id="."'$userId'";
+				$sql = "UPDATE expenses_category_assigned_to_users SET expense_limit="."'$this->limitamount'".", is_limit_active = 1 WHERE name="."'$this->categorylimit'"." AND user_id="."'$userId'";
 				$db = static::getDB();
 				$stmt = $db->prepare($sql);
 				$stmt->execute();
@@ -259,7 +259,7 @@ class Setchanges extends \Core\Model
 			{
 				$userId = $user->id;
 				
-				$sql = "UPDATE expenses_category_assigned_to_users SET expense_limit=NULL WHERE name="."'$this->categorylimit'"." AND user_id="."'$userId'";
+				$sql = "UPDATE expenses_category_assigned_to_users SET is_limit_active=0 WHERE name="."'$this->categorylimit'"." AND user_id="."'$userId'";
 				$db = static::getDB();
 				$stmt = $db->prepare($sql);
 				$stmt->execute();
